@@ -17,8 +17,6 @@ fonttools==4.29.1
 foolbox==3.2.1
 gitdb==4.0.5
 GitPython==3.1.12
-idna @ file:///tmp/build/80754af9/idna_1593446292537/work
-importlib-metadata @ file:///tmp/build/80754af9/importlib-metadata_1593446408836/work
 joblib==1.1.0
 jsonschema==3.2.0
 kiwisolver==1.2.0
@@ -31,7 +29,6 @@ numexpr==2.7.1
 numpy==1.18.5
 olefile==0.46
 packaging==20.4
-pandas @ file:///tmp/build/80754af9/pandas_1592841632039/work
 Pillow==7.1.2
 plac==0.9.6
 preshed==2.0.1
@@ -44,7 +41,6 @@ PySocks==1.7.1
 python-dateutil==2.8.1
 pytz==2020.1
 PyYAML==5.3.1
-requests @ file:///tmp/build/80754af9/requests_1592841827918/work
 scikit-learn==1.0.2
 scipy==1.7.3
 six==1.15.0
@@ -52,14 +48,12 @@ smmap==3.0.5
 soupsieve==2.0.1
 spacy==2.1.8
 srsly==0.1.0
-tensorboardX @ file:///home/conda/feedstock_root/build_artifacts/tensorboardx_1594067496847/work
 thinc==7.0.8
 threadpoolctl==3.1.0
 torch==1.5.1
 torchattacks==3.0.0
 torchvision==0.6.0a0+35d732a
 tornado==6.0.4
-tqdm @ file:///tmp/build/80754af9/tqdm_1593446365756/work
 typing-extensions==3.7.4.3
 urllib3==1.25.9
 wasabi==0.2.2
