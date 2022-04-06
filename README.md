@@ -28,4 +28,17 @@ chmod +x generate_dataset.sh
 chmod +x run_les_training.sh
 ./run_les_training.sh
 ```
+
+## Citation
+
+Please consider citing our paper:
+
+```
+@article{moitra2022adversarial,
+  title={Adversarial Detection without Model Information},
+  author={Moitra, Abhishek and Kim, Youngeun and Panda, Priyadarshini},
+  journal={arXiv preprint arXiv:2202.04271},
+  year={2022}
+}
+```
 More Documentation coming Soon. Until then, if you have any questions regarding code execution, please feel free to email me at abhishek.moitra@yale.edu
