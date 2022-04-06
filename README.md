@@ -6,8 +6,13 @@ This repository contains the code for the layer-wise energy separation training 
 
 Prior state-of-the-art adversarial detection works are classifier model dependent, i.e., they require classifier model outputs and parameters for training the detector or during adversarial detection. This makes their detection approach classifier model specific. Furthermore, classifier model outputs and parameters might not always be accessible. To this end, we propose a classifier model independent adversarial detection method using a simple energy function to distinguish between adversarial and natural inputs. We train a standalone detector independent of the classifier model, with a layer-wise energy separation (LES) training to increase the separation between natural and adversarial energies. With this, we perform energy distribution-based adversarial detection. Our method achieves comparable performance with state-of-the-art detection works (ROC-AUC > 0.9) across a wide range of gradient, score and gaussian noise attacks on CIFAR10, CIFAR100 and TinyImagenet datasets. Furthermore, compared to prior works, our detection approach is light-weight, requires less amount of training data (40% of the actual dataset) and is transferable across different datasets.
 
+## Animation of layer 1 Energy Separation Training
 <img src="/gifs/stage_1.gif" width="500" height="250"/>
+
+## Animation of layer 2 Energy Separation Training
 <img src="/gifs/stage_2.gif" width="500" height="250"/>
+
+## Animation of layer 3 Energy Separation Training
 <img src="/gifs/stage_3.gif" width="500" height="250"/>
 
 ## How to Setup the Environment
