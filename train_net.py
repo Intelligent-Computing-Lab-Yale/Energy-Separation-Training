@@ -10,7 +10,6 @@ import torchvision.transforms as transforms
 
 import os
 import argparse
-# import dataset
 
 # from train_utils import progress_bar
 
@@ -55,9 +54,11 @@ if args.dataset == 'cifar100':
     n_classes = 100
 
 if args.dataset == 'tinyimagenet':
+    import dataset
     trainloader, testloader = dataset.tinyimagenet(batch_size=256)
     n_classes = 200
 if args.dataset == 'cifar10':
+    import dataset
     trainloader, testloader = dataset.get10(batch_size=256)
     n_classes = 10
 # Model
