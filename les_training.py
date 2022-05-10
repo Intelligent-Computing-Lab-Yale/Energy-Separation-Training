@@ -25,7 +25,7 @@ parser.add_argument('--batch_size', type=int, default=200, help='input batch siz
 parser.add_argument('--epochs', type=int, default=257, help='number of epochs to train (default: 10)')
 parser.add_argument('--log_interval', type=int, default=100,  help='how many batches to wait before logging training status')
 parser.add_argument('--test_interval', type=int, default=1,  help='how many epochs to wait before another test')
-parser.add_argument('--la', type=float, default = 0.6)
+parser.add_argument('--la', type=float, default = 0.9)
 parser.add_argument('--lc', type=float, default = 0.1)
 parser.add_argument('--lr', type=float, default = 0.01)
 parser.add_argument('--pgd_params', default = '8_4_10')
@@ -220,7 +220,7 @@ for epoch in range(args.epochs):
         if (mean_soi_a - mean_soi_c) > best_sep:
         # if loss_energy < best_loss:
         #     new_file = args.save_pth+'/no_bn_momentum0.6_500_layer3_la='+str(args.la)+'_od_'+args.type+'_'+args.pgd_params+'.pth'
-            new_file = args.save_pth+'/task_'+str(args.task)+'_stage_'+str(args.stage)+'_out_'+str(out1)
+            new_file = args.save_pth+'/task_'+str(args.task)+'_stage_'+str(args.stage)
             f.write(f'saving at {new_file} \n')
             torch.save(model, new_file)
             best_loss = loss_energy

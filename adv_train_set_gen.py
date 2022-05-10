@@ -111,7 +111,6 @@ def pgd_attack(net, device, testloader, n_batches ):
 
             train_dataset.append(adv_da_tuple)
             train_dataset.append(clean_da_tuple)
-            print(batch_idx)
             if args.type == 'tinyimagenet' and (batch_idx+1) % 100 == 0:
                 # print(batch_idx)
                 print(args.path+'/set_task_'+args.task+'_'+str(batch_idx))

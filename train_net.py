@@ -17,9 +17,9 @@ import argparse
 parser = argparse.ArgumentParser(description='PyTorch CIFAR100 Training')
 parser.add_argument('--lr', default=0.005, type=float, help='learning rate')
 parser.add_argument('--resume', '-r', action='store_true', help='resume from checkpoint')
-parser.add_argument('--network', default='mobilenet_v2', help='resume from checkpoint')
-parser.add_argument('--path', default='./path', help='resume from checkpoint')
-parser.add_argument('--dataset', default='cifar100', help='resume from checkpoint')
+parser.add_argument('--network', default='mobilenet_v2', help='network to train')
+parser.add_argument('--path', default='./path', help='path to store model')
+parser.add_argument('--dataset', default='cifar100', help='dataset for training')
 args = parser.parse_args()
 
 if not os.path.exists(args.path): os.mkdir(args.path)   # create result directory
